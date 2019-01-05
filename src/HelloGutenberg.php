@@ -37,15 +37,21 @@ class HelloGutenberg extends EditorBlock {
 	public function register_script() {
 		wp_register_script(
 			"{$this->block_name}-js",
-			plugins_url( "assets/{$this->block_name}/block.js", dirname( __FILE__ ) ), // @TODO Add a file path to OOPS-WP.
+			plugins_url( dirname( __FILE__ ) . '/assets/block.js' ), // @TODO Add a file path to OOPS-WP.
 			[ 'wp-blocks', 'wp-i18n', 'wp-element' ]
 		);
 	}
 
 	public function register_style() {
 		wp_register_style(
-			"{$this->block_name}-css",
-			plugins_url( "assets/wp/{$this->block_name}/editor.css", dirname( __FILE__ ) ),
+			"{$this->block_name}-editor-css",
+			plugins_url( dirname( __FILE__ ) . '/assets/editor.css' ),
+			[ 'wp-edit-blocks' ]
+		);
+
+		wp_register_style(
+			"{$this->block_name}-style-css",
+			plugins_Url( dirname( __FILE__ ) . '/assets/style.css' ),
 			[ 'wp-edit-blocks' ]
 		);
 	}
@@ -59,8 +65,8 @@ class HelloGutenberg extends EditorBlock {
 		// Block Type must include a namespace, or it will not render!
 		register_block_type( "jmichaelward/{$this->block_name}", [
 			'editor_script' => "{$this->block_name}-js",
-			'editor_style' => "{$this->block_name}-css", // Editor stylesheet.
-			'style' => "{$this->block_name}-css", // Frontend stylesheet.
+			'editor_style'  => "{$this->block_name}-editor-css", // Editor stylesheet.
+			'style'         => "{$this->block_name}-style-css", // Frontend stylesheet.
 		] );
 	}
 }
