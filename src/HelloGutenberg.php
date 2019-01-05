@@ -37,7 +37,7 @@ class HelloGutenberg extends EditorBlock {
 	public function register_script() {
 		wp_register_script(
 			"{$this->block_name}-js",
-			plugins_url( '/assets/block.js', __FILE__ ), // @TODO Add a file path to OOPS-WP.
+			plugins_url( '/assets/block.js', dirname( __FILE__ ) ), // @TODO Add a file path to OOPS-WP.
 			[ 'wp-blocks', 'wp-i18n', 'wp-element' ]
 		);
 	}
@@ -45,13 +45,13 @@ class HelloGutenberg extends EditorBlock {
 	public function register_style() {
 		wp_register_style(
 			"{$this->block_name}-editor-css",
-			plugins_url( '/assets/editor.css', __FILE__ ),
+			plugins_url( '/assets/editor.css', dirname( __FILE__ ) ),
 			[ 'wp-edit-blocks' ]
 		);
 
 		wp_register_style(
 			"{$this->block_name}-style-css",
-			plugins_Url( '/assets/style.css', __FILE__ ),
+			plugins_Url( '/assets/style.css', dirname( __FILE__ ) ),
 			[ 'wp-edit-blocks' ]
 		);
 	}
