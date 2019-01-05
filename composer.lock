@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "44ca43287622c1e015cf40943b92dcd7",
+    "content-hash": "5b16f77de1e0a63dded36e50faf85f4b",
     "packages": [
         {
             "name": "composer/installers",
@@ -132,13 +132,13 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:jmwcomposer/oops-wp.git",
-                "reference": "141e4edea91dc7755a9f2420a86b6b01c949dc03"
+                "reference": "777573e4e40a1866b10621310777658ba2c33677"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://packages.jmichaelward.com/dist/webdevstudios/oops-wp/webdevstudios-oops-wp-dev-master-9cee65.tar",
-                "reference": "141e4edea91dc7755a9f2420a86b6b01c949dc03",
-                "shasum": "1b0f11584c607acee7a701387c4c73b9cb28b665"
+                "url": "https://packages.jmichaelward.com/dist/webdevstudios/oops-wp/webdevstudios-oops-wp-dev-master-3e5ff9.tar",
+                "reference": "777573e4e40a1866b10621310777658ba2c33677",
+                "shasum": "7703df48ac106e54e112308b32aca29ec4256df1"
             },
             "require": {
                 "php": "^7"
@@ -160,7 +160,7 @@
                 }
             ],
             "description": "A collection of interfaces and class structures to promote object-oriented programming practices in WordPress.",
-            "time": "2019-01-05T05:20:20+00:00"
+            "time": "2019-01-05T18:10:02+00:00"
         }
     ],
     "packages-dev": [],

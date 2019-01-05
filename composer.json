@@ -11,5 +11,10 @@
     "require": {
         "composer/installers": "^1.6",
         "webdevstudios/oops-wp": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "JMichaelWard\\WPBlock\\": "src/"
+        }
     }
 }
