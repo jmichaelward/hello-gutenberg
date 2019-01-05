@@ -1,0 +1,15 @@
+{
+    "name": "jmichaelward/hello-gutenberg",
+    "description": "Implementation of the Hello World Gutenberg block in a Composer-installable package.",
+    "type": "wordpress-block",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.jmichaelward.com"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.6",
+        "webdevstudios/oops-wp": "dev-master"
+    }
+}
