@@ -32,13 +32,15 @@ class HelloGutenberg extends EditorBlock {
 	/**
 	 * Register block JavaScript.
 	 *
+	 * @inheritdoc
 	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
 	 * @since  2019-01-04
+	 * @throws \Exception If asset is not found.
 	 */
 	public function register_script() {
 		wp_register_script(
 			"{$this->block_name}-js",
-			plugins_url( '/assets/block.js', dirname( __FILE__ ) ), // @TODO Add a file path to OOPS-WP.
+			$this->get_asset_url( 'block.js' ), // @TODO Add a file path to OOPS-WP.
 			[ 'wp-blocks', 'wp-i18n', 'wp-element' ]
 		);
 	}
@@ -48,17 +50,18 @@ class HelloGutenberg extends EditorBlock {
 	 *
 	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
 	 * @since  2019-02-17
+	 * @throws \Exception If asset is not found.
 	 */
 	public function register_style() {
 		wp_register_style(
 			"{$this->block_name}-editor-css",
-			plugins_url( '/assets/editor.css', dirname( __FILE__ ) ),
+			$this->get_asset_url( 'editor.css' ),
 			[ 'wp-edit-blocks' ]
 		);
 
 		wp_register_style(
 			"{$this->block_name}-style-css",
-			plugins_url( '/assets/style.css', dirname( __FILE__ ) ),
+			$this->get_asset_url( 'style.css' ),
 			[ 'wp-edit-blocks' ]
 		);
 	}
