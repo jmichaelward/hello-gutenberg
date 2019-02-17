@@ -10,7 +10,7 @@
     ],
     "require": {
         "webdevstudios/oops-wp": "dev-master",
-        "jmichaelward/wp-editor-block-installer": "dev-master"
+        "jmichaelward/wp-editor-block-installer": "^0.1"
     },
     "autoload": {
         "psr-4": {

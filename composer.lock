@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c5cb42a6779e1ee0eb6a476b3e8d9557",
+    "content-hash": "aedf7445f121b15d43da89f07b7ea746",
     "packages": [
         {
             "name": "jmichaelward/wp-editor-block-installer",
-            "version": "dev-master",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jmichaelward/wp-editor-block-installer.git",
-                "reference": "3b26def702c03363f302fc3e0300768422c3e1cf"
+                "reference": "54f72c04a7620a0d603635aaab1ea0ebdde94a36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jmichaelward/wp-editor-block-installer/zipball/3b26def702c03363f302fc3e0300768422c3e1cf",
-                "reference": "3b26def702c03363f302fc3e0300768422c3e1cf",
+                "url": "https://api.github.com/repos/jmichaelward/wp-editor-block-installer/zipball/54f72c04a7620a0d603635aaab1ea0ebdde94a36",
+                "reference": "54f72c04a7620a0d603635aaab1ea0ebdde94a36",
                 "shasum": ""
             },
             "require": {
@@ -48,7 +48,7 @@
                 }
             ],
             "description": "Composer installer for custom WordPress editor block components.",
-            "time": "2019-02-17T00:56:57+00:00"
+            "time": "2019-02-17T01:20:04+00:00"
         },
         {
             "name": "webdevstudios/oops-wp",
@@ -91,8 +91,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "webdevstudios/oops-wp": 20,
-        "jmichaelward/wp-editor-block-installer": 20
+        "webdevstudios/oops-wp": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
