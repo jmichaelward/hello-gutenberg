@@ -22,7 +22,7 @@ use WebDevStudios\OopsWP\Structure\Editor\EditorBlock;
  */
 class HelloGutenberg extends EditorBlock {
 	/**
-	 * Name of the script.
+	 * Name of the block.
 	 *
 	 * @var string
 	 * @since 2019-01-04
@@ -30,9 +30,10 @@ class HelloGutenberg extends EditorBlock {
 	protected $block_name = 'hello-gutenberg';
 
 	/**
+	 * Register block JavaScript.
+	 *
 	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
 	 * @since  2019-01-04
-	 * @return void
 	 */
 	public function register_script() {
 		wp_register_script(
@@ -42,6 +43,12 @@ class HelloGutenberg extends EditorBlock {
 		);
 	}
 
+	/**
+	 * Register block editor and front-end stylesheets.
+	 *
+	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 * @since  2019-02-17
+	 */
 	public function register_style() {
 		wp_register_style(
 			"{$this->block_name}-editor-css",
@@ -57,9 +64,10 @@ class HelloGutenberg extends EditorBlock {
 	}
 
 	/**
+	 * Register type of block with WordPress.
+	 *
 	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
 	 * @since  2019-01-04
-	 * @return void
 	 */
 	public function register_type() {
 		// Block Type must include a namespace, or it will not render!
