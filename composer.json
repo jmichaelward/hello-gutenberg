@@ -9,12 +9,15 @@
         }
     ],
     "require": {
-        "composer/installers": "^1.6",
-        "webdevstudios/oops-wp": "dev-master"
+        "webdevstudios/oops-wp": "dev-master",
+        "jmichaelward/wp-editor-block-installer": "dev-master"
     },
     "autoload": {
         "psr-4": {
             "JMichaelWard\\WPBlock\\": "/"
         }
+    },
+    "extra": {
+        "installer-name": "hello-gutenberg"
     }
 }
