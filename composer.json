@@ -9,6 +9,7 @@
         }
     ],
     "require": {
+        "composer/installers": "*",
         "webdevstudios/oops-wp": "dev-master",
         "jmichaelward/wp-editor-block-installer": "^0.1"
     },
