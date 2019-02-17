@@ -51,7 +51,7 @@ class HelloGutenberg extends EditorBlock {
 
 		wp_register_style(
 			"{$this->block_name}-style-css",
-			plugins_Url( '/assets/style.css', dirname( __FILE__ ) ),
+			plugins_url( '/assets/style.css', dirname( __FILE__ ) ),
 			[ 'wp-edit-blocks' ]
 		);
 	}
