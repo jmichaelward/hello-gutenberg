@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "846bfcd7dcdd7fecaaefc3b4f24df268",
+    "content-hash": "dcb9b0e2c5ae33f8a03e8199d8cb2cf0",
     "packages": [
         {
             "name": "composer/installers",
@@ -172,17 +172,17 @@
         },
         {
             "name": "webdevstudios/oops-wp",
-            "version": "dev-master",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:jmwcomposer/oops-wp.git",
-                "reference": "777573e4e40a1866b10621310777658ba2c33677"
+                "url": "https://github.com/WebDevStudios/oops-wp.git",
+                "reference": "bda6b19e002748b0ff1344ad5aee5f2685f78a4f"
             },
             "dist": {
-                "type": "tar",
-                "url": "https://packages.jmichaelward.com/dist/webdevstudios/oops-wp/webdevstudios-oops-wp-dev-master-3e5ff9.tar",
-                "reference": "777573e4e40a1866b10621310777658ba2c33677",
-                "shasum": "7703df48ac106e54e112308b32aca29ec4256df1"
+                "type": "zip",
+                "url": "https://api.github.com/repos/WebDevStudios/oops-wp/zipball/bda6b19e002748b0ff1344ad5aee5f2685f78a4f",
+                "reference": "bda6b19e002748b0ff1344ad5aee5f2685f78a4f",
+                "shasum": ""
             },
             "require": {
                 "php": "^7"
@@ -193,6 +193,7 @@
                     "WebDevStudios\\OopsWP\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -204,15 +205,13 @@
                 }
             ],
             "description": "A collection of interfaces and class structures to promote object-oriented programming practices in WordPress.",
-            "time": "2019-01-05T18:10:02+00:00"
+            "time": "2019-04-01T22:18:00+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "webdevstudios/oops-wp": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
